@@ -1,0 +1,40 @@
+---
+title: "Instacart Data Exploration"
+output: 
+    revealjs::revealjs_presentation:  
+     highlight: pygments
+     center: true
+     theme: white
+     transition: fade
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+# Introduction to the data
+
+
+## Instacart
+
+The dataset contained multiple CSV files that obtained information such as: orders, time of day the order was placed, day of the week, what products are being ordered, from which departments and aisles, and how many days have passed since the previous order was placed. 
+
+This information can be used to detect customer patterns. 
+
+## Let's begin by looking at the following customer trends:
+
+- Number of Orders placed by each day of the week.
+- Number of Orders placed by time of day.
+- How often orders are placed
+- Order frequency
+    - Number of orders placed by each customer
+
+
+## 
+```{r echo=FALSE}
+knitr::include_app('https://melissafranco.shinyapps.io/InstaCartOrders/', height = '800px')
+```
+
+
+
